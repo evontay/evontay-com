@@ -167,11 +167,11 @@ header {
 }
 
 .top-page {
-  margin-top: 75px;
+  padding-top: 75px;
 }
 
 .page {
-  min-height: 100px;
+  min-height: 10px;
 }
 
 /*.page.blue {
