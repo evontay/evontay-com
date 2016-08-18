@@ -10,8 +10,10 @@
 }
 
 body {
+  background-image: url('./img/bg.jpg');
   background-color: #dfdede;
   border: 30px solid #f7dbd2;
+    background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
