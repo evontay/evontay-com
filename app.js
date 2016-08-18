@@ -15,6 +15,11 @@ $(function () {
 })
 
 $(window).scroll(function () {
+  console.log('hello top-fade')
+  $('#top').css('opacity', 1 - $(window).scrollTop() / 350)
+})
+
+$(window).scroll(function () {
   console.log('hello navbar')
   if ($(this).scrollTop() > 200) {
     $('#nav').fadeIn()
