@@ -13,7 +13,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     <link rel="stylesheet" href="app.css">
 
@@ -22,6 +25,23 @@
   </head>
 
   <body data-spy="scroll" data-target="#nav" data-offset="50">
+    <input type="checkbox" id="sidebartoggler" name="" value=""></input>
+    <div class="page-wrap">
+      <!-- mobile nav -->
+      <label for="sidebartoggler" class="menu-tog">
+        <h5>☰</h5>
+      </label>
+
+    <div class="sidebar">
+
+      <a href='#top'> <img src="./img/evontay-logo-fill.svg"/> </a>
+      <ul>
+        <li><a href="#projects1">Projects</a></li>
+        <li><a href="#experience1">Experience</a></li>
+        <li><a href="#education1">Education</a></li>
+        <li><a href="#contact1">Contact</a></li>
+      </ul>
+    </div>
 
     <nav class="navigation fixed" id="nav">
       <a href='#top'>
@@ -299,7 +319,7 @@
         <!-- <p class='footer-info'>This website was lovingly crafted with Node.JS (backend) + Ember.JS (frontend). &copy; Evon Tay in 2016</p> -->
       </div><!-- #contact1 -->
       </footer>
-
+    </div><!-- .page-wrap -->
       <!-- Jquery -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Scrollspy -->
