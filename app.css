@@ -245,57 +245,7 @@ header {
   box-shadow: 0px 5px 5px 2px #999;
 }
 
-@media (max-width:480px) {
-    body {
-      background-color: lightgreen;
-      border: 10px solid #f7dbd2;
-    }
 
-    .bigwrap {padding: 15px;}
-    .social { max-width: 280px; }
-    .social > li {padding: 8px;}
-    .header-logo {margin-bottom: 20px;}
-    .intro { font-size: 1.5em !important; }
-    .proj-itemA, .proj-itemB {
-      margin: 20px auto;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .st {display: none;}
-    .proj-itemA {
-      flex-direction: column !important;
-    }
-
-    .proj-itemB {
-      flex-direction: column-reverse !important;
-      margin: 30px auto !important;
-      margin-right: 0px !important;
-
-    }
-
-    .proj-itemA .proj-img {
-      border-bottom: 1px solid white;
-    }
-
-    .proj-itemA h2, .proj-itemB h2 {
-      font-size: 1.2em !important;
-    }
-
-    .proj-info {padding: 30px 20px !important;}
-
-    .proj-info p{
-      margin-left: auto !important;
-      margin: 0 auto;
-    }
-
-    .proj-btn-grp {
-      margin-bottom: 0px !important;
-      margin: 30px auto 10px auto !important;
-      text-align: center;
-      display: block !important;
-    }
-}
 .proj-itemB {
   margin: 150px auto;
   margin-right: 50px;
@@ -384,11 +334,97 @@ header {
 }
 
 /* ===== RESUME ===== */
+@media (max-width:480px) {
+    body {
+      background-color: lightgreen;
+      border: 10px solid #f7dbd2;
+    }
 
+    .bigwrap {padding: 15px;}
+    .social { max-width: 280px; }
+    .social > li {padding: 8px;}
+    .header-logo {margin-bottom: 20px;}
+    .intro { font-size: 1.5em !important; }
+    .proj-itemA, .proj-itemB {
+      margin: 20px auto;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .st {display: none;}
+    .proj-itemA {
+      flex-direction: column !important;
+    }
+
+    .proj-itemB {
+      flex-direction: column-reverse !important;
+      margin: 30px auto !important;
+      margin-right: 0px !important;
+
+    }
+
+    .proj-itemA .proj-img {
+      border-bottom: 1px solid white;
+    }
+
+    .proj-itemA h2, .proj-itemB h2 {
+      font-size: 1.2em !important;
+    }
+
+    .proj-info {padding: 30px 20px !important;}
+
+    .proj-info p{
+      margin-left: auto !important;
+      margin: 0 auto;
+    }
+
+    .proj-btn-grp {
+      margin-bottom: 0px !important;
+      margin: 30px auto 10px auto !important;
+      text-align: center;
+      display: block !important;
+    }
+    .empty { display: none; }
+
+    #experience1 h2, #education1 h2 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .work-item, .education-item {
+      margin: 30px auto !important;
+    }
+
+    .work-left, .education-left {
+      margin-left: 0px !important;
+      flex-direction: column !important;
+    }
+
+    .period {
+      text-align: center !important;
+      width: auto !important;
+      text-align: center !important;
+      margin-top: 10px !important;
+      margin-bottom: 30px;
+    }
+
+    .timeline {
+      width: 80% !important;
+      text-align: center !important;
+      border-top: 1px solid #555 !important;
+      margin: 10px auto !important;
+    }
+
+    .work-item, .education-item {
+      flex-direction: column-reverse !important;
+      text-align: center;
+    }
+
+
+}
 #experience1, #education1 {
   /*margin-top: 100px;*/
   /*margin-bottom: 50px;*/
-
 }
 
 #experience1 {
@@ -459,7 +495,7 @@ header {
 footer {
   background-color: #f7dbd2;
   text-align: center;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   padding-bottom: 10px;
 }
 
