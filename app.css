@@ -259,7 +259,6 @@ header {
     .proj-itemA, .proj-itemB {
       margin: 20px auto;
       flex-direction: column;
-      max-width: 90%;
       text-align: center;
     }
 
@@ -270,6 +269,9 @@ header {
 
     .proj-itemB {
       flex-direction: column-reverse !important;
+      margin: 30px auto !important;
+      margin-right: 0px !important;
+
     }
 
     .proj-itemA .proj-img {
@@ -280,7 +282,19 @@ header {
       font-size: 1.2em !important;
     }
 
-    .proj-info {padding: 20px !important;}
+    .proj-info {padding: 30px 20px !important;}
+
+    .proj-info p{
+      margin-left: auto !important;
+      margin: 0 auto;
+    }
+
+    .proj-btn-grp {
+      margin-bottom: 0px !important;
+      margin: 30px auto 10px auto !important;
+      text-align: center;
+      display: block !important;
+    }
 }
 .proj-itemB {
   margin: 150px auto;
@@ -294,7 +308,7 @@ header {
 
 .st {
   width: 50px;
-  border: 1px 555 #888;
+  border: 1px solid #888;
   margin: 20px 0px 30px 0px;
 }
 
@@ -309,7 +323,7 @@ header {
   width: 90%;
 }*/
 
-.proj-info p, .proj-btn-grp {
+.proj-info p{
   margin-left: 40px;
   margin-top: 20px;
   width: 85%;
@@ -340,7 +354,7 @@ header {
 .proj-btn-grp {
   display: flex;
   flex-direction: row;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 .proj-btn {
