@@ -33,6 +33,7 @@ body {
 
 .bigwrap {
   padding: 30px;
+  padding-left: 50px;
 }
 
 
@@ -422,12 +423,11 @@ header {
 
 
 }
-#experience1, #education1 {
-  /*margin-top: 100px;*/
-  /*margin-bottom: 50px;*/
+#education1 {
+  margin-left: 50px;
 }
 
-#experience1 {
+#experience1, #education1 {
   display: flex;
   flex-direction: row;
   /*margin-left: 200px; */
@@ -435,6 +435,14 @@ header {
 
 .empty {flex: 2;}
 .work { flex: 3;}
+.education { flex: 4;}
+
+.work h2, .education h2 {margin-bottom: 50px;}
+.work .st, .education .st {
+  border: 2px solid #555;
+  width: 30px;
+  margin-bottom: 50px;
+}
 
 .work-item, .education-item {
   flex: 2;
@@ -443,8 +451,6 @@ header {
   display: flex;
   flex-direction: row;
 }
-
-
 
 .work-left, .education-left {
   flex: 1;
