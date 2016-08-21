@@ -123,8 +123,8 @@ transition: 0.3s ease-out;
 .menu-tog {
   display: none;
   position: fixed;
-  top: 35px;
-  left: 35px;
+  top: 15px;
+  left: 20px;
   color: #555;
   cursor: pointer;
   z-index: 1;
@@ -467,6 +467,11 @@ transition: 0.3s ease-out;
     }
     .empty { display: none; }
 
+  }
+  #education1 {
+    margin-left: 0 !important;
+  }
+
     #experience1 h2, #education1 h2 {
       text-align: center;
       margin-bottom: 50px;
@@ -501,6 +506,13 @@ transition: 0.3s ease-out;
       text-align: center;
     }
 
+    #contact1 > p, .contact {
+    max-width: 90% !important;
+  }
+
+  .contact {
+    margin: 10px auto !important;
+  }
 
 }
 #education1 {
