@@ -477,7 +477,7 @@ transition: 0.3s ease-out;
     }
     .empty { display: none; }
 
-  }
+  
   #education1 {
     margin-left: 0 !important;
   }
@@ -517,14 +517,15 @@ transition: 0.3s ease-out;
     }
 
     #contact1 > p, .contact {
-    max-width: 90% !important;
-  }
+      max-width: 90% !important;
+    }
 
-  .contact {
+    .contact {
     margin: 10px auto !important;
-  }
+    }
 
 }
+
 #education1 {
   margin-left: 50px;
 }
