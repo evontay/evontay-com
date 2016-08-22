@@ -40,7 +40,7 @@ body {
   width: 100%;
 }
 
-@media (min-width:768px) {
+@media (max-width:768px) {
     body {
         /*background-attachment: scroll;*/
         -webkit-background-size: cover;
