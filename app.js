@@ -31,10 +31,11 @@ $(window).scroll(function () {
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop()
 
-  if (wScroll > $('.proj1').offset().top - $(window).height()) {
-    var offset = Math.min(0, wScroll - $('.proj1').offset().top + $(window).height() - 600)
+  if (wScroll > $('.education-item').offset().top - $(window).height()) {
+    var offset = Math.min(0, wScroll - $('.education-item').offset().top + $(window).height() - 400)
+    // $('.education-item').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
     $('.proj1').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
-    // console.log('opacity should be (wScroll / $(proj).offset().top): ' + (wScroll / $('.proj1').offset().top))
+    $('.education-item').css('opacity', wScroll / $('.education-item').offset().top)
     $('.proj1').css('opacity', wScroll / $('.proj1').offset().top)
   }
 
@@ -63,17 +64,14 @@ $(window).scroll(function () {
   }
 
   if (wScroll > $('.work').offset().top - $(window).height()) {
-    var offset = Math.min(0, wScroll - $('.work').offset().top + $(window).height())
-    // console.log('offset: ' + offset)
-    console.log('wScroll: ' + wScroll)
-    console.log('w height:' + $(window).height())
-    console.log('work opacity is w height / wScroll: ' + ($(window).height() / wScroll))
-    $('.work').css('opacity', ($(window).height() / wScroll))
+    var offset = Math.min(0, wScroll - $('.work').offset().top + $(window).height() - 600)
+    $('.work').css({'transform': 'translate(' + Math.abs(offset) + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
+    $('.work').css('opacity', wScroll / $('.work').offset().top)
   }
 
   if (wScroll > $('.education').offset().top - $(window).height()) {
     var offset = Math.min(0, wScroll - $('.education').offset().top + $(window).height() - 600)
-    // $('.education').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
-    $('.education').css('opacity', wScroll / $('.education').offset().top)
+    $('.education').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
+  // $('.education').css('opacity', wScroll / $('.education').offset().top)
   }
 })
