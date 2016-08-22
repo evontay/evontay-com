@@ -339,6 +339,7 @@ transition: 0.3s ease-out;
 
 
 /* ===== PROJECTS ===== */
+#projects1 .education-item{opacity: 0;}
 
 .proj-itemA {
   margin: 50px auto;

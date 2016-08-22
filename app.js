@@ -31,12 +31,12 @@ $(window).scroll(function () {
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop()
 
-  if (wScroll > $('.education-item').offset().top - $(window).height()) {
-    var offset = Math.min(0, wScroll - $('.education-item').offset().top + $(window).height() - 400)
-    // $('.education-item').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
+  if (wScroll > $('.proj1').offset().top - $(window).height()) {
+    var offset = Math.min(0, wScroll - $('.proj1').offset().top + $(window).height() - 500)
+    $('.education-item').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
     $('.proj1').css({'transform': 'translate(' + offset + 'px, ' + Math.abs(offset * 0.1) + 'px)'})
     $('.education-item').css('opacity', wScroll / $('.education-item').offset().top)
-    $('.proj1').css('opacity', wScroll / $('.proj1').offset().top)
+    $('.proj1').css('opacity', wScroll / $('.education-item').offset().top)
   }
 
   if (wScroll > $('.proj2').offset().top - $(window).height()) {
