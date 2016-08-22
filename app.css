@@ -580,6 +580,7 @@ transition: 0.3s ease-out;
 .education-right {
   flex: 4;
   min-width: 300px;
+  max-width: 350px;
 }
 
 
@@ -592,7 +593,8 @@ transition: 0.3s ease-out;
 }
 
 .timeline {
-  min-width: 50px;
+  min-width: 40px;
+  max-width: 50px;
   border-top: 2px solid #555;
   margin: 10px;
 }
