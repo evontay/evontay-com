@@ -21,25 +21,42 @@ body {
   color: #555;
 }
 
-#e, #v, #o, #n {
+#e, #v, #o, #n, #t, #a, #y {
   z-index: -99;
   position: absolute;
-  height: 400px;
 }
 
 #e {
-  left: 100px;
+  right: 100px;
+  top: 60vh;
+  height: 500px;
 }
 
-#v {
-  top: 50vh;
-  right: 10vw;
-
+#v, #n {
+  left: 10vw;
+  height: 300px;
 }
 
 #o {
-  top: 50vh;
-  left: 30vw;
+  right: 10vw;
+  height: 400px;
+}
+
+#t {
+  margin-top: 150px;
+  right: 8vw;
+  height: 400px;
+}
+
+#a {
+  left: 20vw;
+  height: 500px;
+}
+
+#y {
+  right: 15vw;
+  bottom: 100px;
+  height: 300px;
 }
 
 
@@ -48,6 +65,7 @@ body {
   padding: 30px;
   padding-left: 50px;
   transition: 0.3s ease-out;
+  position: relative;
 }
 
 .pink {color: #f7dbd2;}
