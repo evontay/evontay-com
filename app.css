@@ -655,7 +655,7 @@ form {
   margin: 0 auto;
   margin-top: 30px;
   max-width: 600px;
-  font-size: 1em;
+  font-size: 1em !important;
 }
 
 .field {
