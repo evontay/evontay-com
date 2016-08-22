@@ -9,9 +9,11 @@
   opacity: 0;
 }
 
-
 body {
-  background-image: url('./img/bg.jpg') no-repeat fixed top;
+  background-image: url('./img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
   background-color: #dfdede;
   border: 30px solid #f7dbd2;
     background-blend-mode: multiply;
@@ -283,38 +285,6 @@ transition: 0.3s ease-out;
   min-height: 10px;
 }
 
-/*.page.blue {
-  background-color: #0071c5;
-}
-
-.page.green {
-  background-color: #c4d600;
-}
-
-.page.orange {
-  background-color: #fc4c02;
-}
-
-.page.yellow {
-  background-color: #f3d54e;
-}*/
-
-/* ===== NAVIGATION ===== */
-#nav-bar {
-  display:none;
-}
-
-.nav {
-  position: fixed;
-  left: 50px;
-  top: 70px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-}
-
 .homebtn {
   width: 50px;
   left: 30px;
@@ -339,8 +309,6 @@ transition: 0.3s ease-out;
   -o-transform: rotate(90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-
-
 
 
 /* ===== PROJECTS ===== */
@@ -369,8 +337,8 @@ transition: 0.3s ease-out;
 }
 
 .st {
-  width: 50px;
-  border: 1px solid #888;
+  width: 40px;
+  border: 2px solid #555;
   margin: 20px 0px 30px 0px;
 }
 
@@ -378,6 +346,7 @@ transition: 0.3s ease-out;
   flex:2;
   line-height: 1.5;
   padding: 20px;
+  padding-left: 30px;
   color: #555;
 }
 /*
@@ -494,6 +463,7 @@ transition: 0.3s ease-out;
       position: relative;
       border-bottom: 2px solid #999;
       box-sizing: border-box;
+      overflow: scroll;
     }
 
     .proj-itemA h2, .proj-itemB h2 {
@@ -622,7 +592,7 @@ transition: 0.3s ease-out;
 }
 
 .timeline {
-  width: 70px;
+  min-width: 50px;
   border-top: 2px solid #555;
   margin: 10px;
 }
@@ -688,6 +658,7 @@ form {
 .field {
   /*background: #f7dbd2;*/
   border: none;
+  border-radius: 0;
   border-bottom: 2px solid #999;
   padding-bottom: 10px;
   margin-bottom: 30px;
