@@ -21,13 +21,28 @@ body {
   color: #555;
 }
 
-#e {
+#e, #v, #o, #n {
   z-index: -99;
-  height: 200px;
-  top: 500px;
-  right: 100px;
   position: absolute;
+  height: 400px;
 }
+
+#e {
+  left: 100px;
+}
+
+#v {
+  top: 50vh;
+  right: 10vw;
+
+}
+
+#o {
+  top: 50vh;
+  left: 30vw;
+}
+
+
 
 .bigwrap {
   padding: 30px;
@@ -477,7 +492,7 @@ transition: 0.3s ease-out;
     }
     .empty { display: none; }
 
-  
+
   #education1 {
     margin-left: 0 !important;
   }
@@ -538,7 +553,7 @@ transition: 0.3s ease-out;
 
 .empty {flex: 2;}
 .work { flex: 3;}
-.education { flex: 4;}
+.education { flex: 5;}
 
 .work h2, .education h2 {margin-bottom: 50px;}
 .work .st, .education .st {
@@ -670,6 +685,6 @@ form > button:hover {
   transition: 0.2s ease-out;
 }
 
-.footer-info {
-  font-size: 0.8em;
+footer .footer-info{
+  font-size: 0.8em !important;
 }
