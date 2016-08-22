@@ -9,16 +9,21 @@
   opacity: 0;
 }
 
+
 body {
-  background-image: url('./img/bg.jpg');
+  background-image: url('./img/bg.jpg') no-repeat fixed top;
   background-color: #dfdede;
   border: 30px solid #f7dbd2;
     background-blend-mode: multiply;
   background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  -webkit-background-size: cover;
   font-family: 'Raleway', sans-serif;
   color: #555;
+}
+
+html {
+height: 100vh;
+min-height: 100%;
 }
 
 #e, #v, #o, #n, #t, #a, #y {
