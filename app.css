@@ -599,15 +599,18 @@ transition: 0.3s ease-out;
 
 .work-right {
   flex: 2;
+  min-width: 300px;
 }
 
 .education-right {
   flex: 4;
+  min-width: 300px;
 }
 
 
 .period {
-  width: 70px;
+  min-width: 70px;
+  max-width: 80px;
   font-weight: 700;
   font-size: 1em;
   text-align: right;
@@ -684,6 +687,7 @@ form {
   padding-bottom: 10px;
   margin-bottom: 30px;
   width: 100%;
+  font-size: 1em !important;
 }
 
 form > button {
@@ -695,6 +699,7 @@ form > button {
   width: 150px;
   background-color: #fff;
   color: #999;
+  font-size: 1em !important;
 }
 
 form > button:hover {
