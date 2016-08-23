@@ -37,7 +37,6 @@ body {
   -webkit-background-size: cover;
   font-family: 'Raleway', sans-serif;
   color: #555;
-  width: 100%;
 }
 
 @media (max-width:768px) {
