@@ -407,7 +407,7 @@ transition: 0.3s ease-out;
 .proj-btn-grp {
   display: flex;
   flex-direction: row;
-  margin: 20px 0;
+  margin: 20px 40px;
 }
 
 .proj-btn {
